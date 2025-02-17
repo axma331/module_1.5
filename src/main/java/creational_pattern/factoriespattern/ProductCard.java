@@ -1,5 +1,7 @@
 package creational_pattern.factoriespattern;
 
+import java.util.Map;
+
 public interface ProductCard {
-    void render();
+    Map<String, String> getCard();
 }
