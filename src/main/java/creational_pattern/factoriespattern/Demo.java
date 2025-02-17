@@ -5,11 +5,11 @@ public class Demo {
         Marketplace marketplace;
         Product product = new Product("Laptop", "Powerful end slim", 500);
 
-        marketplace = new MarketplaceOzon(product);
+        marketplace = new MarketplaceOzonFactory(product);
         marketplace.render();
 
         System.out.println("==========================");
 
-        marketplace = new MarketplaceWB(product);
+        marketplace = new MarketplaceWBFactory(product);
         marketplace.render();
 }}

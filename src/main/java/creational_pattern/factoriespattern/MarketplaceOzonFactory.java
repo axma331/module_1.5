@@ -1,7 +1,7 @@
 package creational_pattern.factoriespattern;
 
-public class MarketplaceOzon extends Marketplace {
-    public MarketplaceOzon(Product product) {
+public class MarketplaceOzonFactory extends Marketplace {
+    public MarketplaceOzonFactory(Product product) {
         productCard = new OzonProductCard(product);
     }
 }

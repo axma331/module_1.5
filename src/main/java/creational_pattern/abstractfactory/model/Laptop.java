@@ -1,5 +1,4 @@
-package creational_pattern.abstractfactory;
+package creational_pattern.abstractfactory.model;
 
-public interface Laptop {
-    
+public interface Laptop extends Electronics {
 }

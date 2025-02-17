@@ -1,7 +1,7 @@
 package creational_pattern.factoriespattern;
 
-public class MarketplaceWB extends Marketplace {
-    public MarketplaceWB(Product product) {
+public class MarketplaceWBFactory extends Marketplace {
+    public MarketplaceWBFactory(Product product) {
         productCard = new WBProductCard(product);
     }
 }
