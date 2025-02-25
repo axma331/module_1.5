@@ -61,6 +61,4 @@ public class MarketplaceFacade {
         System.out.println("Finish");
         scanner.close();
     }
-
-
 }
