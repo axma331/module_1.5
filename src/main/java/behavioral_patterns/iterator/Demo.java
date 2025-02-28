@@ -16,5 +16,6 @@ public class Demo {
             System.out.println(iterator.next());
         }
 
+        System.out.println(productCard);
     }
 }
