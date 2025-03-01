@@ -34,16 +34,16 @@ public class Demo {
         System.out.println(product);
 
         System.out.println("\nRestoring to previous state...");
-        caretaker.undo();
+        caretaker.undo(product);
         System.out.println("\nState after undo 1:");
         System.out.println(product);
 
         System.out.println("\nRestoring to initial state...");
-        caretaker.undo();
+        caretaker.undo(product);
         System.out.println("\nState after undo 2:");
         System.out.println(product);
 
         System.out.println("\nTrying to restore again...");
-        caretaker.undo();
+        caretaker.undo(product);
     }
 }
