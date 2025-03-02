@@ -7,16 +7,15 @@ public class Demo {
         Product orangeWatch = new Product("Orange watch");
         Product pineapple = new Product("Honor laptop");
 
-        Promotion promotion = new Promotion();
-        promotion.subscribe(appleWatch);
-        promotion.notifySubscribers("First event");
+        Promotion promotion = new Promotion("March 8th", new EventManager());
+        promotion.addSubscriber(appleWatch);
+        promotion.setEvent("First event");
         System.out.println("----------------------------");
-        promotion.subscribe(orangeWatch);
-        promotion.subscribe(pineapple);
-        promotion.notifySubscribers("Second event");
+        promotion.addSubscriber(orangeWatch);
+        promotion.addSubscriber(pineapple);
+        promotion.setEvent("Second event");
         System.out.println("----------------------------");
-        promotion.unsubscribe(appleWatch);
-        promotion.notifySubscribers("Third event");
-
+        promotion.removeSubscriber(appleWatch);
+        promotion.setEvent("Third event");
     }
 }

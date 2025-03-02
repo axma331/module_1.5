@@ -1,5 +1,5 @@
 package behavioral_patterns.observer;
 
-public interface Subscriber {
+public interface Publisher {
     void notify(String event);
 }
